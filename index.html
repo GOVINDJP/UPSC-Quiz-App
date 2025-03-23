@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="start-container">
+            <h1>Welcome to UPSC Quiz</h1>
+            <p>Test your knowledge with 100 expertly crafted questions!</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+        <div id="quiz" class="quiz-container hidden">
+            <header>
+                <div id="timer">Time Left: <span id="time">60</span>s</div>
+                <div id="progress">Questions: <span id="attempted">0</span> / 100</div>
+            </header>
+            <h2 id="question"></h2>
+            <ul id="options" class="options"></ul>
+            <div class="buttons">
+                <button id="submit">Submit</button>
+                <button id="quit">Quit</button>
+            </div>
+        </div>
+        <div id="result" class="result-container hidden">
+            <h2>Quiz Results</h2>
+            <p class="score">Your Score: <span id="score"></span></p>
+            <div id="answers" class="answers-scroll"></div>
+            <button id="restart">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 90%; /* Flexible width */
     max-width: 700px;
     padding: 30px;
     background: #f9f9f9; /* Light gray for subtle contrast */
@@ -212,22 +212,173 @@ button:disabled {
 }
 
 /* Responsive Design */
+
+/* Small Mobile Devices (up to 480px) */
 @media (max-width: 480px) {
     .container {
+        width: 95%;
         padding: 15px;
+    }
+    .start-container {
+        padding: 30px;
     }
     .start-container h1 {
         font-size: 2rem;
     }
+    .start-container p {
+        font-size: 1.1rem;
+    }
+    #start-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
     h2 {
         font-size: 1.5rem;
     }
-    button, #start-btn {
-        padding: 10px 20px;
-        font-size: 1rem;
+    .quiz-container {
+        padding: 15px;
     }
     .options li {
         padding: 12px;
         font-size: 1rem;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    .result-container h2 {
+        font-size: 2rem;
+    }
+    .score {
+        font-size: 1.3rem;
+    }
+    .answers-scroll {
+        max-height: 250px;
+    }
+}
+
+/* Medium Mobile/Tablet Devices (481px–768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 85%;
+        padding: 25px;
+        max-width: 600px;
+    }
+    .start-container {
+        padding: 40px;
+    }
+    .start-container h1 {
+        font-size: 2.5rem;
+    }
+    .start-container p {
+        font-size: 1.2rem;
+    }
+    #start-btn {
+        padding: 12px 35px;
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    .options li {
+        padding: 14px;
+        font-size: 1.05rem;
+    }
+    button {
+        padding: 11px 25px;
+        font-size: 1.05rem;
+    }
+    .result-container h2 {
+        font-size: 2.2rem;
+    }
+    .score {
+        font-size: 1.4rem;
+    }
+    .answers-scroll {
+        max-height: 300px;
+    }
+}
+
+/* Tablets/Laptops (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        padding: 30px;
+        max-width: 800px;
+    }
+    .start-container {
+        padding: 45px;
+    }
+    .start-container h1 {
+        font-size: 2.7rem;
+    }
+    .start-container p {
+        font-size: 1.25rem;
+    }
+    #start-btn {
+        padding: 14px 38px;
+        font-size: 1.15rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .options li {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+    button {
+        padding: 12px 28px;
+        font-size: 1.1rem;
+    }
+    .result-container h2 {
+        font-size: 2.4rem;
+    }
+    .score {
+        font-size: 1.45rem;
+    }
+    .answers-scroll {
+        max-height: 320px;
+    }
+}
+
+/* Large Desktops (1025px and up) */
+@media (min-width: 1025px) {
+    .container {
+        width: 75%;
+        max-width: 900px;
+        padding: 35px;
+    }
+    .start-container {
+        padding: 50px;
+    }
+    .start-container h1 {
+        font-size: 3rem;
+    }
+    .start-container p {
+        font-size: 1.4rem;
+    }
+    #start-btn {
+        padding: 16px 45px;
+        font-size: 1.25rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .options li {
+        padding: 18px;
+        font-size: 1.2rem;
+    }
+    button {
+        padding: 14px 35px;
+        font-size: 1.2rem;
+    }
+    .result-container h2 {
+        font-size: 2.6rem;
+    }
+    .score {
+        font-size: 1.6rem;
+    }
+    .answers-scroll {
+        max-height: 400px;
     }
 }

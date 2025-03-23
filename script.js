@@ -1,4 +1,3 @@
-// Sample JSON with 100 questions (unchanged)
 const quizData = {
         "question1": {
             "question": "In which one of the following regions was Dhanyakataka, a prominent Buddhist centre under the Mahasanghikas, located? (UPSC 2023)",
